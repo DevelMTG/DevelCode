@@ -122,7 +122,9 @@ public class HttpConnUtil {
 			boolean isPost, 
 			Map<String,String> requestHeader
 	) {
-		
+		// http 통신일 경우, 주석을 풀고 아래 SSL 관련 사항 제거
+		//HttpURLConnection conn = null;
+		// https 통신
 		HttpsURLConnection conn = null;
 		String line = null;
 		InputStream in = null;
