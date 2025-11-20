@@ -127,7 +127,7 @@ public class HttpConnUtil {
 		String line = null;
 		InputStream in = null;
 		BufferedReader reader = null; 
-		StringBuffer buf = new StringBuffer();
+		StringBuilder buf = new StringBuilder();
 		
 		try {
 			conn = (HttpsURLConnection)url.openConnection();
